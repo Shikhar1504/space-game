@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <div id="player"></div>
+      <div id="score">Score: <span id="score-value">0</span></div>
+      <div id="health-bar-container">
+        <div id="health-bar"></div>
+      </div>
+      <div id="game-over" class="hidden">
+        <h1>Game Over</h1>
+        <p>Your score: <span id="final-score"></span></p>
+        <button id="restart-button">Restart</button>
+      </div>
+    </div>
+    <div style="display: none">
+      <img
+        id="spaceship-img"
+        src="https://opengameart.org/sites/default/files/ship_0.png"
+        alt="Spaceship"
+      />
+      <img
+        id="rock-img"
+        src="https://opengameart.org/sites/default/files/asteroid_1.png"
+        alt="Rock"
+      />
+      <audio
+        id="shoot-sound"
+        src="https://opengameart.org/sites/default/files/laser5.wav"
+      ></audio>
+      <audio
+        id="explosion-sound"
+        src="https://opengameart.org/sites/default/files/explosion_1.wav"
+      ></audio>
+      <audio id="background-music" loop>
+        <source
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/455279/sstar.mp3"
+          type="audio/mp3"
+        />
+      </audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
