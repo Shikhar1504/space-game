@@ -125,5 +125,5 @@ body {
 }
 
 #game-container {
-  cursor: pointer; /* Ensures the pointer (mouse cursor) is visible when hovering over the game area */
+  cursor: pointer; 
 }
